@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bhautikbece-tech.github.io/vsb-hr-solutions/sitemap.xml
