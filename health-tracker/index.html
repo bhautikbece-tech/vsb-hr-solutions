@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthTrack Pro | Personal Health Assessment</title>
+  <meta name="description" content="Professional health, nutrition, fitness and lifestyle assessment portal." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav"><strong>HealthTrack Pro</strong><span>Personalized Wellness Assessment</span></div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div><span class="eyebrow">HEALTH • NUTRITION • FITNESS • LIFESTYLE</span><h1>Build your personalized health plan</h1><p>Complete this assessment to help create a personalized diet, workout and lifestyle plan based on your goals, routine and health information.</p></div>
+      <div class="notice"><strong>Your privacy matters.</strong><p>This assessment is intended for wellness planning. Do not submit emergency information. Health records should be reviewed by a qualified healthcare professional where needed.</p></div>
+    </section>
+    <section class="card">
+      <div class="progress-wrap"><div class="progress"><div id="progressBar"></div></div><div id="stepText">Step 1 of 8</div></div>
+      <form id="healthForm" novalidate>
+        <section class="step active"><h2>1. Basic Profile</h2><div class="grid">
+          <label>Full name*<input name="fullName" required></label><label>Age*<input type="number" name="age" min="1" max="120" required></label>
+          <label>Sex*<select name="sex" required><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option><option>Prefer not to say</option></select></label>
+          <label>Height (cm)*<input type="number" name="height" min="50" max="250" required></label><label>Weight (kg)*<input type="number" step="0.1" name="weight" min="20" max="300" required></label><label>Waist (cm)<input type="number" step="0.1" name="waist"></label>
+          <label>Occupation<input name="occupation"></label><label>Activity level<select name="activity"><option>Sedentary</option><option>Lightly active</option><option>Moderately active</option><option>Highly active</option></select></label>
+        </div></section>
+        <section class="step"><h2>2. Medical & Health History</h2><div class="grid">
+          <label class="full">Existing medical conditions<textarea name="medicalConditions" placeholder="Diabetes, thyroid, hypertension, etc."></textarea></label><label class="full">Current medications<textarea name="medications"></textarea></label><label class="full">Current supplements<textarea name="supplements"></textarea></label><label>Allergies<textarea name="allergies"></textarea></label><label>Past surgeries / injuries<textarea name="injuries"></textarea></label><label class="full">Family history<textarea name="familyHistory" placeholder="Diabetes, hypertension, heart disease, etc."></textarea></label>
+        </div></section>
+        <section class="step"><h2>3. Recent Health Measurements</h2><div class="grid"><label>Blood pressure<input name="bloodPressure" placeholder="e.g. 120/80"></label><label>Resting heart rate<input type="number" name="restingHeartRate"></label><label>Fasting glucose<input name="fastingGlucose"></label><label>HbA1c<input name="hba1c"></label><label>Total cholesterol<input name="totalCholesterol"></label><label>LDL<input name="ldl"></label><label>HDL<input name="hdl"></label><label>Triglycerides<input name="triglycerides"></label><label>Hemoglobin<input name="hemoglobin"></label><label>Vitamin B12<input name="vitaminB12"></label><label>Vitamin D<input name="vitaminD"></label><label>TSH<input name="tsh"></label></div></section>
+        <section class="step"><h2>4. Diet Assessment</h2><div class="grid"><label>Diet type*<select name="dietType" required><option value="">Select</option><option>Vegetarian</option><option>Vegetarian + Eggs</option><option>Non-vegetarian</option><option>Vegan</option></select></label><label>Daily water intake (litres)<input type="number" step="0.1" name="water"></label><label class="full">Typical breakfast<textarea name="breakfast"></textarea></label><label class="full">Typical lunch<textarea name="lunch"></textarea></label><label class="full">Typical dinner<textarea name="dinner"></textarea></label><label>Snacks / tea / coffee<textarea name="snacks"></textarea></label><label>Foods disliked or avoided<textarea name="foodAvoid"></textarea></label></div></section>
+        <section class="step"><h2>5. Physical Activity & Fitness</h2><div class="grid"><label>Average daily steps<input type="number" name="steps"></label><label>Exercise days/week<input type="number" min="0" max="7" name="exerciseDays"></label><label>Current exercise<textarea name="currentExercise"></textarea></label><label>Preferred exercise<textarea name="preferredExercise"></textarea></label><label>Available equipment<textarea name="equipment" placeholder="None, dumbbells, resistance bands, gym, etc."></textarea></label><label>Exercise limitations / pain<textarea name="limitations"></textarea></label><label>Available exercise time per day<select name="exerciseTime"><option>Less than 20 min</option><option>20–30 min</option><option>30–45 min</option><option>45–60 min</option><option>More than 60 min</option></select></label></div></section>
+        <section class="step"><h2>6. Sleep, Stress & Lifestyle</h2><div class="grid"><label>Average sleep (hours)<input type="number" step="0.5" min="0" max="24" name="sleepHours"></label><label>Sleep quality<select name="sleepQuality"><option>Poor</option><option>Average</option><option>Good</option></select></label><label>Stress level<select name="stress"><option>Low</option><option>Moderate</option><option>High</option></select></label><label>Daily sitting time<select name="sitting"><option>Less than 4 hours</option><option>4–6 hours</option><option>6–8 hours</option><option>More than 8 hours</option></select></label><label>Bedtime<input type="time" name="bedtime"></label><label>Wake-up time<input type="time" name="wakeTime"></label><label class="full">Other lifestyle concerns<textarea name="lifestyleConcerns"></textarea></label></div></section>
+        <section class="step"><h2>7. Goals & Preferences</h2><div class="grid"><label class="full">Primary health goal*<select name="primaryGoal" required><option value="">Select</option><option>Health maintenance</option><option>Weight loss</option><option>Weight gain</option><option>Muscle gain</option><option>Improve fitness</option><option>Improve metabolic health</option><option>Improve energy and lifestyle</option></select></label><label>Target weight<input type="number" step="0.1" name="targetWeight"></label><label>Preferred plan detail<select name="planDetail"><option>Simple</option><option>Moderate</option><option>Detailed</option></select></label><label class="full">Biggest health concern<textarea name="healthConcern"></textarea></label><label class="full">Biggest obstacle to following a healthy lifestyle<textarea name="obstacle"></textarea></label></div></section>
+        <section class="step"><h2>8. Consent & Review</h2><p>Please review your details before submitting.</p><label class="consent"><input type="checkbox" name="consent" required> <span>I confirm that the information provided is accurate to the best of my knowledge and consent to its use for creating a personalized wellness plan. I understand that this does not replace medical diagnosis or emergency care.</span></label><div id="review"></div></section>
+        <div class="actions"><button type="button" id="prevBtn" class="secondary">Back</button><button type="button" id="nextBtn">Continue</button><button type="submit" id="submitBtn" hidden>Submit Assessment</button></div>
+        <p id="message" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> HealthTrack Pro • Wellness assessment platform</footer>
+  <script src="app.js"></script>
+</body>
+</html>
