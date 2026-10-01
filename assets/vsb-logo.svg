@@ -1,6 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 150" role="img" aria-labelledby="title desc">
-<title id="title">VSB HR Solutions</title><desc id="desc">VSB HR Solutions logo</desc>
-<rect width="420" height="150" rx="18" fill="#162443"/>
-<g font-family="Georgia,serif" text-anchor="middle"><text x="210" y="72" font-size="62" fill="#fff">V<tspan fill="#c99b3b">S</tspan>B</text><text x="210" y="103" font-size="15" letter-spacing="5" fill="#fff">HR SOLUTIONS</text><text x="210" y="126" font-size="9" fill="#e2bd69">Brilliant HR Strategies for Visionary Growth.</text></g>
-<circle cx="210" cy="62" r="5" fill="#c99b3b"/><circle cx="195" cy="65" r="4" fill="#c99b3b"/><circle cx="225" cy="65" r="4" fill="#c99b3b"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 180" role="img" aria-labelledby="title desc">
+<title id="title">VSB HR Solutions</title>
+<desc id="desc">VSB HR Solutions logo with gold S and people symbol</desc>
+<defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#c8922e"/>
+    <stop offset=".5" stop-color="#f0c35d"/>
+    <stop offset="1" stop-color="#b77d20"/>
+  </linearGradient>
+</defs>
+<g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+  <text x="150" y="96" font-size="96" fill="#fff">V</text>
+  <text x="210" y="105" font-size="112" fill="url(#gold)">S</text>
+  <text x="272" y="96" font-size="96" fill="#fff">B</text>
+</g>
+<g transform="translate(210 91)">
+  <circle cx="0" cy="-9" r="7" fill="#fff"/>
+  <path d="M-13 10c0-9 5-14 13-14s13 5 13 14v12H-13z" fill="#fff"/>
+  <circle cx="-27" cy="-3" r="6.5" fill="url(#gold)"/>
+  <path d="M-39 15c0-8 4-12 12-12s12 4 12 12v9h-24z" fill="url(#gold)"/>
+  <circle cx="27" cy="-3" r="6.5" fill="url(#gold)"/>
+  <path d="M15 15c0-8 4-12 12-12s12 4 12 12v9H15z" fill="url(#gold)"/>
+</g>
+<line x1="105" y1="125" x2="315" y2="125" stroke="url(#gold)" stroke-width="2"/>
+<text x="210" y="151" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="6" fill="#fff">HR SOLUTIONS</text>
 </svg>
