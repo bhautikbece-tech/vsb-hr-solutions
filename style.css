@@ -40,3 +40,27 @@
 .float-b{right:-18px;bottom:8px;transform:translateY(0)}
 @media(max-width:900px){.hero-grid{gap:38px}.float-b{right:-4px;bottom:-8px}}
 @media(max-width:640px){.hero-visual{padding:0 4px 24px}.float-b{right:0;bottom:-2px}.float-a{left:0;top:22px}.float-card{padding:9px 11px}.float-card>span{width:27px;height:27px}}
+
+/* Hero visual: keep floating badges clear of the metric cards */
+.hero-visual{padding:0 0 64px;min-height:520px}
+.visual-panel{z-index:2}
+.visual-metrics{position:relative;z-index:2}
+.float-card{z-index:4}
+.float-a{left:-18px;top:74px}
+.float-b{right:-18px;bottom:2px;top:auto}
+@media(max-width:900px){
+  .hero-visual{min-height:490px;padding-bottom:68px}
+  .float-b{right:0;bottom:4px}
+}
+@media(max-width:640px){
+  .hero-visual{min-height:0;padding:24px 0 86px;margin-top:10px}
+  .visual-panel{padding:25px 20px;min-height:0;border-radius:24px}
+  .visual-heading{font-size:clamp(32px,9vw,42px);margin-top:64px}
+  .visual-chart{height:76px;margin:18px 0 14px}
+  .visual-metrics{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .visual-metrics div{min-width:0;padding:9px 7px}
+  .visual-metrics b{font-size:12px}
+  .visual-metrics span{display:block;font-size:9px;line-height:1.35}
+  .float-a{left:-4px;top:10px}
+  .float-b{right:0;bottom:0;top:auto}
+}
