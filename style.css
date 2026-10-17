@@ -34,3 +34,9 @@
 .footer-socials a{color:#e5c777;text-decoration:none;font-size:12px;font-weight:700}
 .footer-socials a:hover{text-decoration:underline;text-underline-offset:4px}
 @media(max-width:640px){.contact-socials{gap:8px}.contact-socials a{font-size:11px;padding:9px 11px}.footer-socials{gap:12px}}
+
+/* Keep the floating Talent badge clear of the visual panel's metric cards */
+.hero-visual{padding:0 8px 0 0}
+.float-b{right:-18px;bottom:8px;transform:translateY(0)}
+@media(max-width:900px){.hero-grid{gap:38px}.float-b{right:-4px;bottom:-8px}}
+@media(max-width:640px){.hero-visual{padding:0 4px 24px}.float-b{right:0;bottom:-2px}.float-a{left:0;top:22px}.float-card{padding:9px 11px}.float-card>span{width:27px;height:27px}}
